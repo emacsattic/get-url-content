@@ -1,4 +1,4 @@
-;;; get-url-content.el - Helper function to get URL content
+;;; get-url-content.el --- Helper function to get URL content
 
 ;; Copyright (C) 2002 Sami Salkosuo
 ;; Author: Sami Salkosuo 
@@ -21,7 +21,7 @@
 ;; Free Software Foundation, Inc., 59 Temple Place - Suite 330,
 ;; Boston, MA 02111-1307, USA.
 
-;; Commentary:
+;;; Commentary:
 ;;
 ;; Helper function to get URL content
 ;;
@@ -39,7 +39,8 @@
 ;;
 ;; If you are behind firewalll, HTTP proxy and port must be specified
 ;; (setq http-spec (get-url-content "www.ietf.org/rfc/rfc2616.txt" proxy.host 8080))
-;;
+
+;;; Code:
 
 (defun get-url-content (url &optional proxy-host proxy-port)
   "Functions that gets content from specified URL. Returns content of
